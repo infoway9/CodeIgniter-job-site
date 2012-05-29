@@ -1,0 +1,32 @@
+#AddType image/favicon .ico
+#AddType image/x-icon .ico
+
+#[list=1][*]16x16
+#icon[*]
+
+#AddType image/x-icon .ico
+
+SetEnv APPLICATION_ENV development
+
+#Header set Cache-Control "max-age=290304000, public"
+#Header set Expires "Thu, 15 Apr 2011 20:00:00 GMT"
+FileETag none
+
+RewriteEngine On
+IndexIgnore images/*
+IndexIgnore css/*
+IndexIgnore js/*
+
+#RewriteRule ^search/category/([^/]*)$ /search?category=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
+
+
+
+
+
+
