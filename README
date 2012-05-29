@@ -1,0 +1,10 @@
+Instruction:
+1)Create a database with name “iwjobs” in phpmyadmin.
+2)Copy and paste the “iwjobs” folder into “localhost/htdocs”.
+3) import “database/iwjobs.sql” file in the database .Now your database is created.
+4)Next open “iwjobs/application_candidate_6423/config/database.php” edit “[username]” value by putting your phpmyadmin username,”[password]” value by putting your phpmyadmin password[if you do not have any password the leave it as it is.],save the file.
+5) Next open “iwjobs/application_recruiter_6423/config/database.php” edit “[username]” value by putting your phpmyadmin username,”[password]” value by putting your phpmyadmin password[if you do not have any password the leave it as it is.],save the file.
+6)if you not running the project in localhost then open “iwjobs/application_candidate_6423/config/config.php” and change the “[base_url]”  with your proper path and save it, 
+7)Please write the proper “ABSOLUTE_PATH” in “iwjobs/application_candidate_6423/php_include/define.php” and “iwjobs/application_candidate_6423/ php_include/define.php” in both
+8)“iwjobs/application_recruiter_6423/config/config.php” and change the “[base_url]”  with your proper path and save it
+9)open  browser and paste this link “localhost/iwjobs/”.[for localhost user else you have the give the proper path ex.”http:// Hostaname/projetfo.folderpath/projectname/”].
